@@ -142,11 +142,3 @@
   // RUN NEW GAME ON BUTTON CLICK
   document.querySelector("#button").addEventListener("click", newGame);
 
- // iOS Keyboard Button
-  document.getElementById('openKeyboard').addEventListener('click', function(){
-        var inputElement = document.getElementById('hiddenInput');
-        inputElement.style.visibility = 'visible'; // unhide the input
-        inputElement.focus(); // focus on it so keyboard pops
-        inputElement.style.visibility = 'hidden'; // hide it again
-});
-
