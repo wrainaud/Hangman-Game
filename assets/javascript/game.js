@@ -1,4 +1,4 @@
-// DECLARE VARIABLES NEEDED FOR GAME
+// Declare variables for New Game
 
     var showChar = [];
       showChar[0] = {name: "morty smith", youtube: '<iframe width="500" height="275" src="https://www.youtube.com/embed/E_qvy82U4RE?autoplay=1" frameborder="0" allowfullscreen><iframe>'};
@@ -52,7 +52,7 @@
     var currentcharName;
     var key;
 
-    // CREATE FUNCTION TO INITIALIZE NEW GAME
+    // Function for New Game
     function newGame() {
       placeholder = "";
       goesLeft = 10;
@@ -64,7 +64,7 @@
       charNameLength = charName.length;
       charNameSubstring = charName.substring;
     
-      // ENTERS UNDERSCORES FOR LETTERS AND PREPOPULATES BLANK SPACES
+      // Place holder for letters
       for (var i = 0; i < charName.length; i++) {
         if (charName.substring(i, i + 1) === " "){
           placeholder =  placeholder + " ";
@@ -74,7 +74,7 @@
         }
       }
 
-      // SETS INITIAL CONTENT ON PAGE
+      // Initial Page Content
       document.querySelector("#placeholder").innerHTML = placeholder;
       document.querySelector("#lettersGuessedSpace").innerHTML = lettersGuessed;
       document.querySelector("#wins").innerHTML = wins;
@@ -86,21 +86,21 @@
 
     }
 
-  // INITIALIZE FIRST GAME
+  // Initialize first game
   newGame();
  
-  // LOG KEYSTROKE TO BEGIN LOGIC CHECK
-  document.onkeyup = function(event){
+  // Record keystroke to start logic function
+  document.onkeyup = function(e){
     key = event.key;
 
 
 
     document.querySelector("#message").innerHTML = "Rick and Morty Style Hangman Game.<br/> WUBBA LUBBA DUB DUB!";
 
-    // SET VARIABLE TO CHECK IF YOU LOSE A TURN UPON INCORRECT GUESS
+    // Variable to lose turn
     var correct = 0;
 
-    // LOOP THROUGH artistName TO CHECK IF LETTER IS CORRECT
+    // For Loop to guess if letter was correct
     for (var i = 0; i < charNameLength; i++) {
       if (key == charName.substring(i, i + 1)) {
         correct++;
@@ -109,7 +109,7 @@
       }
     }
 
-    // IF LETTER SELECTED WASN'T CORRECT
+    // If letter selected was incorrect
     if (correct == 0) {
       goesLeft--;
       lettersGuessed.push(key);
@@ -118,7 +118,7 @@
       
     }
 
-    // WIN
+    // Wins
     if (placeholder == charName) {
       wins++;
       document.querySelector("#message").innerHTML = "Listen, I'm not the nicest guy in the universe, because I'm the smartest, and being nice is something stupid people do to hedge their bets.<br/><h3>Click the New Game button to play again!</h3>";
@@ -127,7 +127,7 @@
       document.querySelector("#youtube").innerHTML = youtube;
       
     }
-    // LOSS
+    // Losses
     if (goesLeft == 0) {
       losses++;
       
@@ -139,14 +139,7 @@
     }
 
   }
-  // RUN NEW GAME ON BUTTON CLICK
-  document.querySelector("#button").addEventListener("click", newGame);
+  // New Game Button
+  document.querySelector("#button").addEventListener("click touchstart", newGame);
 
- // iOS Keyboard Button
-  document.getElementById('openKeyboard').addEventListener('click', function(){
-        var inputElement = document.getElementById('hiddenInput');
-        inputElement.style.visibility = 'visible'; // unhide the input
-        inputElement.focus(); // focus on it so keyboard pops
-        inputElement.style.visibility = 'hidden'; // hide it again
-});
 
