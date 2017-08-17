@@ -8,6 +8,7 @@
 html{
   max-height: none;
   height: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 h1{

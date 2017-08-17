@@ -7,17 +7,26 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 
+	<!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/FaviconRM.ico">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>HangRick: Rick and Morty Style Hangman Game</title>
 
    	<!-- Latest compiled and minified CSS -->
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+	 <!-- For iPhone: -->
+	<link media="only screen and (max-device-width: 480px)" href="small-device.css" type= "text/css" rel="stylesheet">
+
+	<!-- For everything else: -->
+	<link media="screen and (min-device-width: 481px)" href="not-small-device.css" type="text/css" rel="stylesheet">
+
 	<!-- Main Styles -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- Title -->
+	<title>HangRick: Rick and Morty Style Hangman Game</title>
   
   </head>
   <body>
