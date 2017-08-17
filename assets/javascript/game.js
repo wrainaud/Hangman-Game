@@ -91,7 +91,12 @@
  
   // Record keystroke to start logic function
   document.onkeyup = function(e){
+    if (key == /[a-zA-Z]/){
     key = event.key;
+    }
+    else{
+
+    }
 
 
 
