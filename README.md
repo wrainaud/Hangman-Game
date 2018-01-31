@@ -22,7 +22,7 @@ The easiest way to get started is to clone the repository:
 
 ```bash
 # Get the latest snapshot
-git clone --depth=1 https://github.com/wrainaud/Ride-by-Train.git myproject
+git clone --depth=1 https://github.com/wrainaud/Rickman.git myproject
 
 # Change directory
 cd myproject
@@ -36,7 +36,6 @@ Technologies
 - HTML5
 - CSS3
     - Bootstrap
-    - Bootswatch
 - Javascript
 
 
@@ -56,12 +55,12 @@ Project Structure
 Support
 -------
 
-Please [open an issue](https://github.com/wrainaud/Ride-by-Train/issues/new) for support.
+Please [open an issue](https://github.com/wrainaud/Rickman/issues/new) for support.
 
 Contributing
 -------
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/wrainaud/Ride-by-Train/compare/).
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/wrainaud/Rickman/compare/).
 
 License
 -------
