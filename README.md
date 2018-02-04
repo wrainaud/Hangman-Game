@@ -46,8 +46,8 @@ Project Structure
 |  |-- css/
 |     |-- style.css                     // Main Game CSS Styles
 |  |-- images/                             
-|  |-- js/                             
-|     |-- javascript.js                // Main Game Logic
+|  |-- javascript/                             
+|     |-- game.js                // Main Game Logic
 | 
 | -- index.html                     // Main HTML page with structure
 ```

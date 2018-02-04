@@ -143,8 +143,8 @@
       
     }
 
-  }
+  };
   // New Game Button
-  document.querySelector("#button").addEventListener("click touchstart", newGame);
+  document.querySelector("#button").addEventListener("click", newGame);
 
 
